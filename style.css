@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+
+header {
+    padding: 0 30px;
+    color: black;
+    font-size: 18px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    height: 50px;
+    z-index: 100;
+    background-color: white;
+}
+
+header>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+
+}
+
+li {
+    display: inline-block;
+
+    position: relative;
+
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+a:hover {
+    color: green;
+    text-decoration: none;
+}
+
+.title {
+    color: green;
+    font-size: 20px;
+    font-weight: 530;
+}
+
+.logo {
+    color: green;
+    font-size: 35px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+main>section {
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: fit-content;
+    border: 1px solid green;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+img {
+    width: 450px;
+    border-radius: 5px;
+}
+
+.subject {
+    max-width: 400px;
+}
+
+.hero-title {
+    line-height: 10px;
+    color: green;
+    font-size: 70px;
+}
+
+.hero-sub-title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+
+.about-us>div>h2 {
+    width: 240px;
+    font-weight: 530;
+}
+
+.about-us-text {
+    max-width: 440px;
+    font-weight: 530;
+    color: gray;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.service {
+    text-align: center;
+
+
+    /* padding: 30px 100px; */
+
+}
+.our{
+    font-size: 30px;
+    font-weight: bold;
+}
+.offering {
+    display: flex;
+    gap: 45px;
+}
+.text{
+    line-height: 1.5;
+    font-size: 18px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+
+}
+
+.item>img {
+    width: 64px;
+    height: 64px;
+}
+
+/* menu style */
+.special{
+    text-align: center;
+}
+.list {
+    border: 1px solid white;
+    box-shadow: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    /* margin: 50px 110px; */
+
+}
+
+.image {
+    text-align: center;
+}
+
+.menu-list {
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    color: black;
+    padding: 25px;
+    /* text-align: center; */
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+
+}
+
+#list {
+    /* padding: 2em !important;
+    padding-top: 10px; */
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 0px;
+    line-height: 0.5;
+
+}
+
+.cart {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px 0 5px 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
+    background-color: green;
+}
+
+.let-talk {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+
+.talk {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    color: gray;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 150px;
+}
+
+.footer>p {
+    color: gray;
+}
+
+@media (max-width: 954px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo {
+        color: green;
+        font-size: 30px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-title {
+        line-height: 10px;
+        color: green;
+        font-size: 40px;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    .hero-sub-title {
+        font-size: 30px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .offering {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .let-talk {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 80px;
+    }
+}
