@@ -23,6 +23,16 @@
     <!-- header -->
     <header>
       <div>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Contact</a></li>
+          
+        </ul>
+
         <p class="logo">Tasty</p>
         <ul class="navbar">
           <li><a href="#">Home</a></li>
@@ -32,7 +42,7 @@
           <li><a href="#">Contact</a></li>
           <i class="fa-regular fa-moon"></i>
         </ul>
-        <div class="menu-toggle"><i class="fa-solid fa-bars fa-2x"></i></div>
+        <div class="menu-toggle"><ul><a href="#"><li onclick="showSidebar()"><i class="fa-solid fa-bars fa-2x"></i></a></li></ul></div>
       </div>
     </header>
     <main>
@@ -291,5 +301,18 @@
         </footer>
       </section>
     </main>
+
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+
+    
   </body>
 </html>

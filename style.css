@@ -58,6 +58,32 @@ a:hover {
     color: green;
     text-decoration: none;
 }
+.sidebar{
+    display: none;
+}
+
+ /* .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+} 
+.sidebar li{
+    width: 25%;
+}
+.sidebar a{
+    width: 25%;
+} */
 
 .title {
     color: green;
@@ -65,9 +91,11 @@ a:hover {
     font-weight: 530;
 }
 
+
 .logo {
     color: green;
     font-size: 35px;
+    text-align: left;
 }
 
 main {
@@ -262,6 +290,7 @@ img {
     color: gray;
 }
 
+
 @media (max-width: 954px) {
     .navbar {
         display: none;
@@ -270,6 +299,28 @@ img {
     .menu-toggle {
         display: block;
     }
+    .sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.102);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.125);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+} 
+.sidebar li{
+    width: 25%;
+}
+.sidebar a{
+    width: 25%;
+}
 
     .logo {
         color: green;
